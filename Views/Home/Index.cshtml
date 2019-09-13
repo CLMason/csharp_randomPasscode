@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Passcode Generator</title>
+    <style>
+        .container{
+            margin-top:70px;
+        }
+        .passcode{
+            border: 2px solid black;
+            height:200px;
+            margin-bottom:40px;
+        }
+    </style>
+</head>
+<body class="container">
+    <div class="text-center">
+    <h1 class="display-4">Random passcode @ViewBag.Count</h1>
+    <div class="passcode">
+        <h1>@ViewBag.randomString</h1>
+    </div>
+    <form action="" method="POST">
+        <input type="Submit" value="Generate" class="btn btn-primary"/>
+    </form>
+    
+</body>
+</html>
